@@ -1,0 +1,26 @@
+h1.title {
+    color: yellow;
+    margin-left: 10px;
+}
+
+.container {
+    background-color: rgb(54, 156, 240);
+    width: 350px;
+    padding-bottom: 6px;
+}
+
+.img {
+    width: 20%;
+    float: left;
+    margin: 10px 10px 0px 10px ;
+}
+
+.style1, .style2, .box1, .box2 {
+    color: yellow;
+    margin: 10px 10px;
+}
+
+.box1, .box2 {
+    background-color: green;
+    border: 4px dashed red;
+}

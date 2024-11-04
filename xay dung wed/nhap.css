@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #0066cc;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #0059b3;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.main-content, .sidebar {
+    padding: 10px;
+}
+
+.main-content {
+    flex: 70%;
+    text-align: center;
+}
+
+.sidebar {
+    flex: 30%;
+    padding-left: 20px;
+}
+
+.main-news .content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-news .text-content {
+    width: 70%; /* Điều chỉnh kích thước của phần văn bản */
+    box-sizing: border-box;
+    padding-right: 20px; /* Tạo khoảng cách giữa phần văn bản và hình ảnh */
+}
+
+.main-news .image-content {
+    width: 30%; /* Điều chỉnh kích thước của phần hình ảnh */
+    box-sizing: border-box;
+}
+
+
+
+.content-box {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: white;
+}
+
+.main-news img,
+.latest-news .news-item img,
+.product-box img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.latest-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.discount {
+    color: red;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+
+.additional-content .digital-economy img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.additional-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.additional-content > div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    clear: both;
+}

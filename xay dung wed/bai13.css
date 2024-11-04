@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 300px;
+    height: 520px;
+    border: 10px solid green;
+    margin: 30px;
+    position: relative;
+}
+.container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.container .trong img {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    width: 240px;
+    height: 250px;
+    object-fit: contain;
+}
+.container .main {
+    width: 70%;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 15%;
+    border-radius: 0 0 50% 50%; 
+    /* outline: 5px solid red;
+    outline-offset: 10px; */
+    border: 5px solid rgb(112, 132, 112);
+    padding: 10px;
+    padding-top: 0;
+    border-top: none;
+    background-clip: content-box;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main a {
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px 15px;
+    background-color: yellow;
+    color: green;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+.main p {
+    font-size: 13px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a p{
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.haha .box {
+    width: 100%;
+    margin: 15px 0px;
+    color: white;
+    display: flex;
+    padding-right: 14px;
+}
+.main .box1, .main .box {
+    font-size: 30px;
+    display: flex;
+}
+.main .box1 {
+    text-align: right;
+    padding-left: 10px;
+}
+.main .box2 span {
+    font-size: 60px;
+}

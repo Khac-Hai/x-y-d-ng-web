@@ -1,0 +1,27 @@
+h1 {
+    font-size: 30px;
+}
+.square-one {
+    width: 38%;
+    height: 10%;
+    background: rgb(132, 8, 132);
+    color: rgb(79, 222, 79);
+}
+.heading-violet {
+    color: rgb(132, 8, 132);
+ }
+ .heading-green {
+    color: rgb(79, 222, 79);
+ }
+.square-two {
+    width: 38%;
+    height: 40%;
+    background: yellow;
+    color: violet;
+}
+.square-three {
+    width: 38%;
+    height: 60%;
+    background: yellow;
+    color: violet;
+}

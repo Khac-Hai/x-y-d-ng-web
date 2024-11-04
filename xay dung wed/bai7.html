@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+<style>
+    .pay {
+        background-color: red;
+        color: white;
+        border: 1px;
+    }
+</style>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <h1>Yêu cầu đặc biệt</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn loại phòng</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="loai_phong" value="giuong_king" id="b_1">
+                    <label for="b_1">1 giường King</label>
+                    <input type="radio" name="loai_phong" value="giuong_don" id="b_2">
+                    <label for="b_2">2 Giường Đơn</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="lightgray">
+                    <table>
+                        <tr>
+                            <td>Yêu cầu đặc biệt</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="Yeu_cau" value="khong_hut_thuoc" id="o_1">
+                                <label for="o_1">Phòng không hút thuốc</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="Yeu_cau" value="o_tang_cao" id="o_2">
+                                <label for="o_2">Phòng ở tầng cao</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Yêu cầu riêng bạn</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="private_req" rows="5">Nhập yêu cầu khác</textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="pay">Thanh toán</button></td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px; 
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.trending {
+    flex: 40;
+    text-align: left;
+}
+
+.trending p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.tags {
+    text-align: left;
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.p1 {
+    background-color: red;
+    padding: 10px;
+    text-align: left;
+}
+
+.p1 a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    margin-left: 200px; 
+}
+
+.p2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 200px; 
+}
+
+
+.content-box .Food img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-box > div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.p3 {
+    display: flex;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 200px; 
+}
+
+.main {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+.main h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.main p {
+    font-size: 16px;
+    color: #333;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.sidebar-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sidebar-item p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+.p4 {
+    max-width: 1200px;
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.text p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a.active, .pagination a:hover {
+    background-color: red;
+    color: #fff;
+    border-color: rgb(243, 239, 239);
+}

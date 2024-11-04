@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải Phương Trình</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        .inputs, .result {
+            padding: 50px;
+            margin: 30px;
+        }
+        .result {
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+            <label for="a">Hệ số a</label>
+            <input type="number" id="a" value="2"><br><br>
+            <label for="b">Hệ số b</label>
+            <input type="number" id="b" value="3"><br><br>
+            <button onclick="solveEquation()">Giải PT</button>
+        </div>
+        <div class="result" id="result">
+            Phương trình: 2x + 3 = 0 <br>
+            Có nghiệm: -1.5
+        </div>
+    </div>
+    <script src="bai1.js"></script>
+</body>
+</html>

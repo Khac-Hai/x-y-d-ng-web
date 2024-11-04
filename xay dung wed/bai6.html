@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Design</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    table td:first-child {
+        width: 120px;
+    }
+    input[type="text"], input[type="password"] {
+        width: calc(100% - 10px);
+        padding: 5px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    input[type="submit"], input[type="reset"] {
+        padding: 8px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        background-color: #45a049;
+    }
+    /* Thay đổi màu chữ của các trường nhập liệu */
+    table td:first-child {
+        color: green;
+    }
+    /* Loại bỏ dấu gạch dưới */
+    table td {
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <td>Tên đăng nhập:</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh:</td>
+            <td><input type="text" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+    </table>
+    <input type="submit" value="Đăng Nhập">
+</form>
+
+</body>
+</html>

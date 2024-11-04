@@ -1,0 +1,166 @@
+/*css*
+
+hình trái tim
+
+/*Định nghĩa container chứa carousel. Nó được định vị tương đối so với vị trí bình thường trong luồng tài liệu
+có độ rộng là 80% của phần tử cha, được căn giữa theo chiều ngang (margin: auto), và ẩn bất kỳ nội dung vượt quá ra ngoài.//
+
+Đặt carousel sử dụng flexbox, cho phép các mục trong nó được hiển thị theo hàng ngang. Thuộc tính transition thêm 
+hiệu ứng hoạt hình mượt mà (0.5s là thời gian với hàm chuyển động ease-in-out) khi các mục trong carousel chuyển đổi (lùi hoặc tiến).
+
+Xác định kiểu dáng cho từng mục trong carousel. Chúng có độ rộng tối thiểu là 25% của độ rộng của container, có padding ở phần trái và
+phải là 4px, sử dụng box-sizing để bao gồm padding và border vào tổng độ rộng của phần tử, và được định vị tương đối (cho phép định vị tuyệt đối của các phần tử con).
+
+Kiểu dáng cho ảnh trong các mục của carousel để điền vào phần tử của chúng (width: 100%), hiển thị như các phần tử block-level (để tránh khoảng trống không mong muốn dưới ảnh),
+ và áp dụng border-radius là 10px để làm tròn góc.
+
+Định vị văn bản tiêu đề một cách tuyệt đối trong từng mục của carousel, cách đáy là 10% và cách trái là 5%. Đặt màu văn bản là trắng, kích thước font là 1.5em,
+ in đậm (font-weight: bold), áp dụng shadow cho văn bản để tạo hiệu ứng nhẹ, và loại bỏ margin mặc định.
+
+Những kiểu dáng này định nghĩa hình dạng và vị trí của các nút điều hướng (prev và next) cho phép người dùng dễ dàng chuyển qua lại giữa các mục trong carousel. 
+Chúng được định vị tuyệt đối (position: absolute) với các cạnh của container carousel (left: 0 cho previous, 
+
+right: 0 cho next), có kích thước cố định (width và height đều là 30px), hình tròn (border-radius: 50%), và được thiết kế để có thể nhìn thấy trên nền mờ 
+(background-color: rgba(0, 0, 0, 0.5)) với văn bản màu trắng.
+
+Kiểu dáng cho một nút (favorite-button) được đặt tuyệt đối (position: absolute) ở góc trên bên phải của mỗi mục trong carousel. Nó có kích thước cụ thể 
+(width và height đều là 40px), hình dạng hình tròn (border-radius: 50%), màu nền (background: rgb(249, 246, 246)), đường viền (border: 2px solid rgb(251, 250, 250)),
+ và màu văn bản là trắng (color: rgb(254, 250, 250)). Các yếu tố này có hiệu ứng chuyển đổi để tạo ra tương tác mượt mà (transition: background 0.3s, color 0.3s, border-color 0.3s).
+
+ /*html
+
+ <svg> element:
+<svg> là phần tử để chứa đoạn mã SVG
+
+class="heart-icon": Đặt lớp cho phần tử SVG để có thể dễ dàng áp dụng các kiểu dáng CSS cho biểu tượng trái tim này.
+
+Thuộc tính viewBox="0 0 24 24":
+viewBox xác định khoảng không gian xem của SVG. Trong trường hợp này, nó có kích thước 24x24 đơn vị (đơn vị không quan trọng, có thể là pixel).
+
+Thuộc tính fill="none":
+fill xác định màu sắc để điền vào các hình dạng bên trong SVG. none chỉ ra rằng không có màu nào được sử dụng để điền vào các hình dạng này.
+Thuộc tính stroke="currentColor":
+
+stroke xác định màu sắc cho nét vẽ trong SVG. Giá trị currentColor sử dụng màu của thuộc tính color của phần tử chứa (trong trường hợp này là màu của văn bản hoặc màu hiện tại 
+đang được sử dụng).
+
+Thuộc tính stroke-width="2":
+stroke-width xác định độ dày của nét vẽ.
+
+Thuộc tính stroke-linecap="round" và stroke-linejoin="round":
+stroke-linecap="round" làm cho đầu mút của các nét vẽ trông tròn hơn.
+stroke-linejoin="round" làm cho các góc nối giữa các đoạn thẳng trong đường vẽ trông tròn hơn.
+
+<path> element
+<path> là phần tử để vẽ các đường dẫn trong SVG.
+d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z": Đây là dữ liệu đường dẫn (path data) mô tả hình dạng của biểu tượng trái tim.
+stroke="black":
+
+Thuộc tính stroke="black" đặt màu cho nét vẽ là màu đen.
+
+hình tròn xanh 
+Mã SVG:
+
+Mỗi đoạn mã SVG là một biểu tượng hình tròn màu xanh (fill="#4CAF50").
+
+<svg> element có các thuộc tính sau:
+
+width="16" và height="16": Đặt chiều rộng và chiều cao của SVG là 16 đơn vị.
+
+viewBox="0 0 24 24": Xác định khu vực xem SVG với kích thước 24x24 đơn vị.
+
+fill="#4CAF50": Đặt màu sắc điền cho các hình dạng bên trong SVG là màu xanh (#4CAF50).
+
+xmlns="http://www.w3.org/2000/svg": Khai báo không gian tên XML cho SVG.
+
+Circle Element trong SVG:
+<circle cx="12" cy="12" r="10"/>: Đây là một hình tròn được vẽ trong SVG.
+cx="12" và cy="12": Xác định tọa độ trung tâm của hình tròn là (12, 12).
+r="10": Bán kính của hình tròn là 10 đơn vị.
+
+Phần tử <span>:
+<span>2.234</span>: Đây là một phần tử HTML <span> chứa số liệu "2.234".
+Phần tử này thường được sử dụng để nhóm và định dạng các phần văn bản hoặc số liệu trên trang web.
+
+/* js
+
+Khai báo biến và hằng số
+javascript
+Sao chép mã
+let currentIndex = 0;
+const itemsPerView = 4;
+
+currentIndex: Biến này lưu trữ chỉ số của phần tử hiện tại đang được hiển thị trong carousel.
+itemsPerView: Hằng số này xác định số lượng mục được hiển thị trong mỗi lần cuộn (viewport).
+
+Hàm scrollCarousel(direction)
+javascript
+Sao chép mã
+function scrollCarousel(direction) {
+    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+
+    currentIndex += direction * itemsPerView;
+
+    if (currentIndex < 0) {
+        currentIndex = totalItems - (totalItems % itemsPerView || itemsPerView);
+    } else if (currentIndex >= totalItems) {
+        currentIndex = 0;
+    }
+
+    let newTransform = -currentIndex * (100 / itemsPerView);
+    
+    // Handle the edge case where remaining items are fewer than itemsPerView
+    if (totalItems - currentIndex < itemsPerView) {
+        newTransform = -(totalItems - itemsPerView) * (100 / itemsPerView);
+    }
+
+    carousel.style.transform = `translateX(${newTransform}%)`;
+}
+Giải thích từng bước trong hàm scrollCarousel
+
+Lấy các phần tử cần thiết
+
+const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+carousel: Lấy phần tử đại diện cho carousel từ DOM bằng cách sử dụng .querySelector('.carousel').
+items: Lấy tất cả các phần tử con trong carousel bằng cách sử dụng .querySelectorAll('.carousel-item').
+totalItems: Lưu trữ số lượng tổng các mục trong carousel.
+
+Thay đổi chỉ số currentIndex
+
+currentIndex += direction * itemsPerView;
+direction: Tham số này xác định hướng di chuyển của carousel. Nếu direction là -1, carousel sẽ di chuyển sang trái; nếu là 1, carousel sẽ di chuyển sang phải.
+itemsPerView: Được sử dụng để xác định số lượng mục sẽ di chuyển mỗi lần.
+
+Xử lý giới hạn cho currentIndex
+
+
+if (currentIndex < 0) {
+    currentIndex = totalItems - (totalItems % itemsPerView || itemsPerView);
+} else if (currentIndex >= totalItems) {
+    currentIndex = 0;
+}
+Nếu currentIndex nhỏ hơn 0, điều này có nghĩa là carousel đã cuộn qua phần tử cuối cùng và cần phải quay lại phần đầu. 
+Dòng currentIndex = totalItems - (totalItems % itemsPerView || itemsPerView); tính toán lại currentIndex để cuộn về phần đầu.
+Nếu currentIndex lớn hơn hoặc bằng totalItems, điều này có nghĩa là carousel đã cuộn qua phần đầu và cần phải quay lại vị trí đầu tiên.
+
+Tính toán và áp dụng transform cho carousel
+
+let newTransform = -currentIndex * (100 / itemsPerView);
+
+// Xử lý trường hợp còn lại khi số lượng mục còn lại ít hơn itemsPerView
+if (totalItems - currentIndex < itemsPerView) {
+    newTransform = -(totalItems - itemsPerView) * (100 / itemsPerView);
+}
+
+carousel.style.transform = `translateX(${newTransform}%)`;
+newTransform: Tính toán giá trị translateX để dịch chuyển carousel. Dựa trên currentIndex, nó tính toán phần trăm cần dịch chuyển.
+Trường hợp đặc biệt được xử lý khi còn lại ít hơn itemsPerView mục để hiển thị. Trong trường hợp này, newTransform được tính dựa trên số lượng mục còn lại.
+Kết quả
+
+Hàm scrollCarousel(direction) này được gọi khi người dùng thực hiện cuộn carousel (trái hoặc phải). Nó tính toán lại vị trí hiện tại của carousel và áp dụng transform để thay đổi vị 
+trí của các mục trong carousel trên giao diện người dùng.

@@ -1,0 +1,27 @@
+
+.container{
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.trong{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    opacity: 0.6;
+}
+
+p{
+    font-size: 20px;
+    line-height: 50px;
+    color: #ffffff;
+    margin-left: 50px;
+}

@@ -1,0 +1,29 @@
+h1.title{
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 7px 5px rgb(204, 84, 84);
+    font-size: 30px;
+    color: #333;
+}
+
+p.content{
+    text-align: justify;
+    text-indent: 30px;
+    font-weight: bold;
+}
+
+.p{
+    font-weight: bold;
+    color: red;
+}
+
+.q{
+    color: rgb(8, 91, 164);
+    font-style: italic;
+}
+
+p.author {
+    text-align: right;
+    text-decoration: underline;
+    color: grey;
+}

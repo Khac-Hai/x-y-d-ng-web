@@ -1,0 +1,26 @@
+text-di
+.news-box{
+    width: 350px;
+    /*height: 300px;*/
+    border: 2px solid #333;
+    border-bottom-right-radius:20px;
+}
+.news-box .main{
+    background-color: darksalmon;
+    padding: 0 15px;
+    padding-bottom: 25px;
+}
+
+.news-box img{
+    width: 100%;
+}
+.news-box a{
+    color: #444;
+}
+.news-box .list{
+    padding: 20px;
+    padding-left: 40px;
+}
+.news-box .list li{
+    margin-bottom: 5px;
+}

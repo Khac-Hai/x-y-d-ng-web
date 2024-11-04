@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+</head>
+
+<body style="color:rgb(27, 124, 184) ;">
+<table border="1" style="background-color: rgb(244, 244, 174); width: 500px;border-collapse: collapse;">
+<thead>
+<caption style="font-size: xx-large; color: rgb(27, 124, 184);">Đăng ký du lịch</caption>
+</thead>
+<tbody>
+<form action="">
+<tr>
+<td><label for="hoten"> Họ và tên</label></td>
+<td><input type="text" name="hoten" id="hoten" style="width: 300px;" placeholder="Họ tên"></td>
+</tr>
+<tr>
+<td><label for="diachi">Địa chỉ</label></td>
+<td><input type="text" name="diachi" id="diachi" style="width: 200px;" placeholder="Địa chỉ"></td>
+</tr>
+<tr>
+<td><label for="dienthoai">Điện thoại</label></td>
+<td><input type="text" name="dienthoai" id="dienthoai" placeholder="Điện thoại"></td>
+</tr>
+<tr>
+<td><label for="khach">Khách Việt Nam</label></td>
+<td><input type="checkbox" name="khach" id="khach" value="khach"></td>
+</tr>
+<tr>
+<td><label for="tour">Chọn tour</label></td>
+<td><select name="tour" id="tour">
+<option selected value="bmt">Buôn mê thuột - Gia lai - Kontum</option>
+<option value="hanoi">Hà Nội</option>
+<option value="haiphong">Hải Phòng</option>
+</select></td>
+</tr>
+<tr>
+<td><label for="phuongtien">Phương tiện</label></td>
+<td>
+<input type="radio" name="phuongtien[]" id="phuongtien" value="maybay">Máy bay
+<input type="radio" name="phuongtien[]" id="phuongtien" value="oto">Xe ô tô
+</td>
+
+</tr>
+<tr>
+<td colspan="2">
+<div style="display: flex; justify-content: center;">
+<fieldset style="width: 300px;border: 2px solid brown;">
+<legend style="color: rgb(153, 107, 20);"><i>Số lượng đoàn khách</i> </legend>
+<div style="display: flex; justify-content: center;">
+Người lớn<input type="number" name="soluong" id="soluong" style="width: 50px;">
+Trẻ em <input type="number" name="soluong" id="soluong" style="width: 50px;">
+</div>
+</fieldset>
+</div>
+</td>
+</tr>
+<tr>
+<td><label for="ghichu">Ghi chú thêm</label></td>
+<td>
+<textarea name="ghichu" id="ghichu" style="resize: none;" placeholder="Ghi chú"
+cols="30"></textarea>
+</td>
+</tr>
+<tr>
+<th colspan="2"><button>Đồng ý</button></th>
+</tr>
+<tr>
+<th colspan="2" style="color: rgb(212, 151, 29);">Bạn đã đăng ký thành công!!!</th>
+</tr>
+</form>
+</tbody>
+</table>
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[ <-- For SVG support
+if ('WebSocket' in window) {
+(function () {
+function refreshCSS() {
+var sheets = [].slice.call(document.getElementsByTagName("link"));
+var head = document.getElementsByTagName("head")[0];
+for (var i = 0; i < sheets.length; ++i) {
+var elem = sheets[i];
+var parent = elem.parentElement || head;
+parent.removeChild(elem);
+var rel = elem.rel;
+if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+}
+parent.appendChild(elem);
+}
+}
+var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+var address = protocol + window.location.host + window.location.pathname + '/ws';
+var socket = new WebSocket(address);
+socket.onmessage = function (msg) {
+if (msg.data == 'reload') window.location.reload();
+else if (msg.data == 'refreshcss') refreshCSS();
+};
+if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+console.log('Live reload enabled.');
+sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+}
+})();
+}
+else {
+console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
+</body>
+
+</html>

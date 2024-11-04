@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Bảng Sinh Viên</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0; /* Màu nền */
+color: #333; /* Màu chữ */
+margin: 0;
+padding: 0;
+}
+.container {
+width: 600px; /* Độ rộng của bảng */
+margin: 20px auto;
+border-collapse: collapse;
+}
+th, td {
+padding: 10px;
+border: 3px solid purple; /* Độ dày và màu của đường viền */
+text-align: left; /* Căn lề văn bản */
+}
+th {
+background-color: #4CAF50; /* Màu nền dòng tiêu đề */
+color: black; /* Màu chữ dòng tiêu đề */
+}
+
+.tr2{
+background-color: #4CAF50; /* Màu nền dòng tiêu đề */
+color: black; /* Màu chữ dòng tiêu đề */
+}
+
+</style>
+</head>
+<body>
+
+<table class="container">
+<caption><strong>KẾT QUẢ HỌC TẬP</strong></caption>
+<thead>
+<tr>
+<th rowspan="2" style="text-align: center;">Họ Và Tên <br>Học Sinh</th>
+<th colspan="2" style="text-align: center;">Năm Sinh</th>
+<th rowspan="2" style="text-align: center;">Điểm Trung Bình</th>
+<th rowspan="2" style="text-align: center;">Xếp Loại</th>
+</tr>
+<tr>
+<th>Nam</th>
+<th>Nữ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lê Thanh Xuân</td>
+<td></td>
+<td style="text-align: center;">1950</td>
+<td style="text-align: center;">8.5</td>
+<td style="text-align: center;">Giỏi</td>
+</tr>
+<tr>
+<td>Phan Thế Hạ</td>
+<td style="text-align: center;">1965</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6.5</td>
+<td style="text-align: center;">Khá</td>
+</tr>
+<tr>
+<td>Trần Hoài Thu</td>
+<td></td>
+<td style="text-align: center;">1986</td>
+<td style="text-align: center;">9,5</td>
+<td style="text-align: center;">Giỏi</td>
+</tr>
+<tr>
+<td>Trương Lưu Đông</td>
+<td style="text-align: center;">1984</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6.0</td>
+<td style="text-align: center;">Trung Bình</td>
+</tr>
+<tr>
+<td>Lưu Thế Mạc</td>
+<td style="text-align: center;">1985</td>
+<td style="text-align: center;"></td>
+
+<td style="text-align: center;">4.5</td>
+<td style="text-align: center;">Kém</td>
+</tr>
+
+<tr class="tr2">
+<td colspan="3" style="text-align: center;">Tổng số học sinh đạt:</td>
+<td colspan="3" style="text-align: center;">4 Học sinh</td>
+</tr>
+
+</tbody>
+</table>
+</body>
+</html>

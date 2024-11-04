@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+}
+
+.image-container .small-image {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-container .large-image {
+    width: 200%; /* Adjust the size of the larger image as needed */
+    height: 200%; /* Adjust the size of the larger image as needed */
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: -50%; /* Adjust position to center the large image */
+    left: -50%; /* Adjust position to center the large image */
+}
+
+.image-container:hover .small-image {
+    opacity: 0;
+}
+
+.image-container:hover .large-image {
+    opacity: 1;
+}

@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+.container {
+    width: 300px;
+    height: 390px;
+    background-color: rgb(226, 221, 221);
+    display: flex;
+    justify-content: center;
+}
+
+ul li::marker {
+    color: rgb(2, 1, 2); /* Đặt màu cho dấu đầu dòng */
+    font-size: 20px; /* Điều chỉnh kích thước của dấu đầu dòng */
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: rgb(94, 91, 91);
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: block; 
+}
+
+
+.time {
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(199, 81, 100);
+    white-space: nowrap; /* Ngăn chặn xuống dòng tự động */
+    display: inline-block; /* Hiển thị trên cùng một dòng */
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="th.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<ul class="box">
+<li> <a> san pham moi </a>
+<ul>
+<li> sp1</li>
+<li> sp2</li>
+<li> sp3</li>
+</ul>
+</li>
+<li> <a>ban chay </a> </li>
+
+<li> <a> ton hang </a> </li>
+</ul>
+<script>
+$(".box>li>ul").hide();
+$(".box>li").click(function() {
+$(this).find("ul").slideToggle();
+
+}
+);
+</script>
+
+</body>
+</html>
